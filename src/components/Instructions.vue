@@ -4,15 +4,15 @@
 
     <ol>
       <li>
-        <p>Enable new Items to be entered to the list</p>
+        <p>Enable new Items to be added to the list</p>
       </li>
 
       <ul>
         <li>
-          In the component <b>SortableList</b>, create a function to handle
-          <i>Add New Items</i> event:
+          In the component <b>SortableList</b>, create a function
+          <i>addNew</i> to handle Add New Items event:
 
-          <pre>
+          <pre class="codestyle">
     function addNew() {
       if(!desc.value) {
         return;
@@ -29,22 +29,39 @@
 
         <li>
           <p>
-            Return addNew function from setup function
+            In the component <b>SortableList</b>, add a click event listener to
+            wire up the button <i>"Add New Items"</i> to the event handler
+            addNew:
           </p>
+
+          <pre class="codestyle">
+          &lt;button <b>v-on:click="addNew" </b> ...
+        </pre>
         </li>
 
         <li>
           <p>
-            In the component <b>SortableList</b>, add event listener to button
-            <i>Add New Items</i>:
+            In the <b>setup</b> function of <b>SortableList</b> component,
+            return <b>addNew</b> function:
           </p>
 
-          <pre>
-          ... v-on:click="addNew" ...
+          <pre class="codestyle">
+    ...
+    return {
+      state,
+      desc,
+      dropEvent,
+      addNew
+    };
         </pre
           >
         </li>
       </ul>
+
+      <p>
+        If everything works fine, a New item should be added to the list after
+        entering a description and clicking the add button
+      </p>
 
       <li>Add functionality to remove Item</li>
 
@@ -72,6 +89,12 @@
           >HTML Drag and Drop API</a
         >
       </li>
+      <li>
+        <a
+          href="https://www.youtube.com/watch?v=bwItFdPt-6M&ab_channel=Academind"
+          >Vue 3 Composition API Introduction [FULL TUTORIAL]</a
+        >
+      </li>
     </ul>
   </div>
 </template>
@@ -87,5 +110,10 @@ h2 {
   text-align: left;
   overflow: -moz-scrollbars-vertical;
   overflow-y: scroll;
+}
+
+.codestyle {
+  color: green;
+  font-weight: 600;
 }
 </style>
