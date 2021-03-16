@@ -44,6 +44,6 @@ You need to add attributes to trash can element and also create the handler for 
 
 ## Reference
 
-[VUE 3 Cheat Sheet](https://www.vuemastery.com/pdf/Vue-3-Cheat-Sheet.pdf) 
-[HTML Drag and Drop API](https://www.w3schools.com/html/html5_draganddrop.asp) 
+[VUE 3 Cheat Sheet](https://www.vuemastery.com/pdf/Vue-3-Cheat-Sheet.pdf)  
+[HTML Drag and Drop API](https://www.w3schools.com/html/html5_draganddrop.asp)  
 [Vue 3 Composition API Introduction [FULL TUTORIAL] ](https://www.youtube.com/watch?v=bwItFdPt-6M&ab_channel=Academind)
