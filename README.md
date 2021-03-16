@@ -40,6 +40,7 @@
 2. Add functionality to remove Item
 
 Using as reference the drag and drop functionality as implemented for ListItem, Allow items to be dragged to the trash can and be deleted on the drop event.
+
 You need to add attributes to trash can element and also create the handler for the drop event
 
 ## Reference
